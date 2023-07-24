@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.gradient-bg-welcome {
+    background-color: #0f0e13;
+    background-image:
+        radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+        radial-gradient(at 50% 0%, rgb(44, 45, 49) 0, transparent 50%);
+}
+
+.gradient-bg-services {
+    background-color: #0f0e13;
+    background-image:
+        radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+        radial-gradient(at 50% 0%, rgb(44, 45, 49) 0, transparent 50%);
+}
+
+.gradient-bg-transactions {
+    background-color: #0f0e13;
+    background-image:
+        radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+        radial-gradient(at 50% 0%, rgb(44, 45, 49) 0, transparent 50%);
+}
+
+.gradient-bg-footer {
+    background-color: #0f0e13;
+    background-image:
+        radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+        radial-gradient(at 50% 0%, rgb(44, 45, 49) 0, transparent 50%);
+}
+
+.gradient-bg-learning {
+    background-color: #0f0e13;
+    background-image:
+        radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+        radial-gradient(at 50% 0%, rgb(44, 45, 49) 0, transparent 50%);
+}
+
+.blue-glassmorphism {
+    background: rgba(22, 28, 49, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.white-glassmorphism {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.eth-card {
+    background-color: #a099ff;
+    background-image:
+        radial-gradient(at 83% 67%, rgba(255, 165, 0, 0.8) 0, transparent 58%),
+        radial-gradient(at 67% 20%, hsla(252, 91%, 64%, 0.8) 0, transparent 59%),
+        radial-gradient(at 88% 35%, hsla(207, 85%, 63%, 0.8) 0, transparent 50%),
+        radial-gradient(at 31% 91%, hsla(35, 90%, 63%, 0.8) 0, transparent 52%),
+        radial-gradient(at 27% 71%, hsla(145, 63%, 64%, 0.8) 0, transparent 49%),
+        radial-gradient(at 74% 89%, hsla(26, 93%, 64%, 0.8) 0, transparent 51%),
+        radial-gradient(at 53% 75%, hsla(330, 89%, 63%, 0.8) 0, transparent 45%);
+    border-radius: 10px;
+}
+
+.text-gradient {
+    background-color: #fff;
+    background-image: radial-gradient(at 4% 36%, hsla(0, 0%, 100%, 1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ethereum-price-container {
+    background-image:
+        radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+        radial-gradient(at 50% 0%, rgb(0, 0, 0) 0, transparent 50%);
+    border-radius: 10px;
+    padding: 30px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ethereum-heading {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ethereum-value {
+    color: #fff;
+    font-size: 28px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.service-card-icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 120px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
