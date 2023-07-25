@@ -93,7 +93,12 @@ You need to have Node.js, NPM, and hardhat installed on your computer, also shou
 
    <br>
 
-7. Run the command 
+
+7. Change your directory back to ```client```
+
+   <br>
+   
+8. Run the command 
 
    ````
     npm run build 
@@ -101,7 +106,7 @@ You need to have Node.js, NPM, and hardhat installed on your computer, also shou
 
    <br>
 
-8. And finally to run the app
+9. And finally to run the app
 
    ```` 
    npm run dev
