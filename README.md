@@ -56,21 +56,20 @@ You need to have Node.js, NPM, and hardhat installed on your computer, also shou
 
    Create a new app and follow the directions from there. For test Ethereums select the network as either Goerli or Sepolia.
 
-5. Copy your private key from your Metamask account and paste it on ```accounts```
 
-6. Get a contract address and paste it on ```export const contractAddress```
+5. Get a contract address and paste it on ```export const contractAddress```
 
    To get the contract you have to run the command
    ``` npx hardhat run scripts/deploy.js ```
 
-7. Get your contract address (the address of your logged-in metamask account) and paste it on ```accounts``` in ```hardhat.config.js```
+6. Get your private key (the private key of your logged-in metamask account) and paste it on ```accounts``` in ```hardhat.config.js```
 
    You will have to change the ```url``` too in case you are not using Sepolia network.
 
-8. Run the command 
+7. Run the command 
 
    ``` npm run build ```
 
-9. And finally to run the app
+8. And finally to run the app
 
    ``` npm run dev ```
