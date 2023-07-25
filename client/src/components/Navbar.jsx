@@ -7,14 +7,6 @@ import { TransactionContext } from "../context/TransactionContext";
 import Learning from "../components/Learning";
 import Services from "../components/Services";
 
-// const NavbarItem = ({ title, classProps }) => {
-//     return (
-//         <li className={`mx-4 cursor-pointer ${classProps}`}>
-//             {title}
-//         </li>
-//     );
-// }
-
 const NavbarItem = ({ title, classProps, link, external }) => {
   const handleItemClick = () => {
     if (external) {
@@ -38,7 +30,7 @@ const NavbarItem = ({ title, classProps, link, external }) => {
 
 const Navbar = () => {
 
-    const { connectWallet, currentAccount } = useContext(TransactionContext);
+    const { connectWallet, currentAccount, disconnectWallet } = useContext(TransactionContext);
 
     const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -60,6 +52,12 @@ const Navbar = () => {
                     
                 </li>
                 )}
+
+                {currentAccount && (
+                <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
+                    <button type="button" onClick={disconnectWallet}>Logout</button>     
+                </li>
+                )}
             </ul>
 
             <div className='flex relative'>
@@ -75,7 +73,7 @@ const Navbar = () => {
                             <li className='text-xl w-full my-2'>
                                 <AiOutlineClose onClick={() => setToggleMenu(false)} />
                             </li>
-                            {["Learning", "About Us"].map((item, index) => (
+                            {["Github", "Learning", "About Us"].map((item, index) => (
                                 <NavbarItem key={item + index} title={item} classProps='my-2 text-lg' />
                             ))}
                         </ul>

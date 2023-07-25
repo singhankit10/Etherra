@@ -94,6 +94,13 @@ export const TransactionProvider = ( {children} ) => {
         }
     }
 
+    const disconnectWallet = () => {
+        const confirmLogout = window.confirm("Are you sure you want to log out?");
+        if (confirmLogout) {
+            setCurrentAccount(null); // Set currentAccount to null to log out the user
+        }     
+    }
+
 
     const sendTransaction = async () => {
         try {
@@ -141,7 +148,7 @@ export const TransactionProvider = ( {children} ) => {
 
 
     return (
-        <TransactionContext.Provider value = {{ connectWallet, currentAccount, formData, setFormData, handleChange, sendTransaction, transactions, isLoading }}>
+        <TransactionContext.Provider value = {{ connectWallet, disconnectWallet, currentAccount, formData, setFormData, handleChange, sendTransaction, transactions, isLoading }}>
             {children}
         </TransactionContext.Provider>
     )
