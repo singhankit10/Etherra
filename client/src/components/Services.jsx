@@ -1,4 +1,5 @@
-const ServiceCard = ({ color, title, iconImage, subtitle }) => (
+const ServiceCard = ({ color, title, iconImage, subtitle, linkedInUrl }) => (
+    <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
     <div className='flex flex-row justify-start items-center white-glassmorphism p-3 m-2 cursor-pointer hover:shadow-xl' style={{ width: '800px', height: "160px" }}>
         <div className={`rounded-full flex justify-center items-center ${color} service-card-icon`} 
             style={{ backgroundImage: `url(${iconImage})` }}>            
@@ -8,6 +9,7 @@ const ServiceCard = ({ color, title, iconImage, subtitle }) => (
             <p className='mt-2 text-white text-sm md:w-9/12 '>{subtitle}</p>
         </div>
     </div>
+    </a>
 );
 
 
@@ -28,6 +30,7 @@ const Services = () => {
                     title = "Ankit Singh"
                     iconImage="https://media.licdn.com/dms/image/D5603AQEkFrb5hgEU1g/profile-displayphoto-shrink_400_400/0/1670911124903?e=1695859200&v=beta&t=af4k-601D71HYn29KVF4wCOAMERfE6Tas6Lk6f2DAEg"
                     subtitle = "Primarily a game developer, but want to learn about every other technology possible."
+                    linkedInUrl="https://www.linkedin.com/in/ankit-singh00/"
                 />
 
                 <ServiceCard 
@@ -35,6 +38,7 @@ const Services = () => {
                     title = "Laksh Dilliwal"
                     iconImage = "https://media.licdn.com/dms/image/D4D03AQGxbIqjFmao0g/profile-displayphoto-shrink_400_400/0/1689160978814?e=1695859200&v=beta&t=4hpoZco8YiX55_7EzpP5UWCHfa28s-0_NhccyIV4IiM"
                     subtitle = "A Web3, Blockchain, and Computer Science Enthusiast."
+                    linkedInUrl="https://www.linkedin.com/in/lakshdilliwal/"
                 />
 
             </div>
