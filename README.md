@@ -23,9 +23,11 @@ You need to have Node.js, NPM, and hardhat installed on your computer, also shou
 **Installation**
 1. Clone the repo
    
+   ````
    ``` git clone https://github.com/singhankit10/Etherra ```
+   ````
    
-2. Install NPM packages
+3. Install NPM packages
 
    Change the directory to **client**
 
@@ -35,7 +37,7 @@ You need to have Node.js, NPM, and hardhat installed on your computer, also shou
    
    ``` npm install ```
 
-3. Compile the smart contract
+4. Compile the smart contract
 
    Change the directory to **smart_contract**
 
