@@ -2,7 +2,7 @@ import React from 'react';
 
 const Learning = () => {
   return (
-    <div className="flex justify-start items-center gradient-bg-learning p-8">
+    <div className="flex justify-start items-center gradient-bg-learning p-8" id="learning">
       <div className="w-1/2">
         <h1 className="text-2xl font-bold text-white mb-4">Learn More About Ethereum</h1>
         <p className="text-white mb-8">

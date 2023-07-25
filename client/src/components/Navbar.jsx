@@ -4,14 +4,37 @@ import {AiOutlineClose} from 'react-icons/ai';
 
 import logo from '../../images/logo.png'
 import { TransactionContext } from "../context/TransactionContext";
+import Learning from "../components/Learning";
+import Services from "../components/Services";
 
-const NavbarItem = ({ title, classProps }) => {
-    return (
-        <li className={`mx-4 cursor-pointer ${classProps}`}>
-            {title}
-        </li>
-    );
-}
+// const NavbarItem = ({ title, classProps }) => {
+//     return (
+//         <li className={`mx-4 cursor-pointer ${classProps}`}>
+//             {title}
+//         </li>
+//     );
+// }
+
+const NavbarItem = ({ title, classProps, link, external }) => {
+  const handleItemClick = () => {
+    if (external) {
+      window.open(link, "_blank");
+    } else {
+      const targetElement = document.querySelector(link);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
+  return (
+    <li className={`mx-4 cursor-pointer ${classProps}`} onClick={handleItemClick}>
+      {title}
+    </li>
+  );
+};
+
+
 
 const Navbar = () => {
 
@@ -27,9 +50,9 @@ const Navbar = () => {
             </div>
 
             <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
-                {["Learning", "About Us"].map((item, index) => (
-                    <NavbarItem key={item + index} title={item} />
-                ))}
+                <NavbarItem title="Github" classProps="..." link="https://github.com/singhankit10/Etherra" external />
+                <NavbarItem title="Learning" classProps="..." link="#learning" />
+                <NavbarItem title="About Us" classProps="..." link="#services" />
 
                 {!currentAccount && (
                 <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
