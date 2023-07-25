@@ -26,6 +26,8 @@ You need to have Node.js, NPM, and hardhat installed on your computer, also shou
    ````
     git clone https://github.com/singhankit10/Etherra 
    ````
+
+   <br>
    
 2. Install NPM packages
 
@@ -40,6 +42,8 @@ You need to have Node.js, NPM, and hardhat installed on your computer, also shou
    ````
     npm install
    ````
+
+   <br>
 
 3. Compile the smart contract
 
@@ -59,6 +63,8 @@ You need to have Node.js, NPM, and hardhat installed on your computer, also shou
    npx hardhat compile
    ````
 
+   <br>
+
 4. Deploy the smart contract
 
    You can do this by logging into **https://www.alchemy.com/**
@@ -70,6 +76,8 @@ You need to have Node.js, NPM, and hardhat installed on your computer, also shou
    Create a new app and follow the directions from there. For test Ethereums select the network as either Goerli or Sepolia.
 
 
+   <br>
+
 5. Get a contract address and paste it on ```export const contractAddress```
 
    To get the contract you have to run the command
@@ -77,15 +85,21 @@ You need to have Node.js, NPM, and hardhat installed on your computer, also shou
    npx hardhat run scripts/deploy.js
    ````
 
+   <br>
+
 6. Get your private key (the private key of your logged-in metamask account) and paste it on ```accounts``` in ```hardhat.config.js```
 
    You will have to change the ```url``` too in case you are not using Sepolia network.
+
+   <br>
 
 7. Run the command 
 
    ````
     npm run build 
    ````
+
+   <br>
 
 8. And finally to run the app
 
