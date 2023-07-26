@@ -5,7 +5,7 @@ A DeFi platform where you can send Ethers from one account to another, and also 
 
 ## **Built with**
 
-* Frontend Framework: React
+* Frontend Framework: Vite + React
 
 * Smart Contracts: Solidity
 
