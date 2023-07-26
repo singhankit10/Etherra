@@ -1,6 +1,8 @@
 # Etherra
 A DeFi platform where you can send Ethers from one account to another, and also learn about some fundamentals of ethers without any hassle.
 
+![Screenshot 2023-07-26 142621](https://github.com/singhankit10/Etherra/assets/80821128/a765ac9d-a177-4d7d-aea2-060e4c09c9e6)
+
 ## **Built with**
 
 * Frontend Framework: React
