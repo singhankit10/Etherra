@@ -80,7 +80,7 @@ You need to have Node.js, NPM, and hardhat installed on your computer, also shou
 
    <br>
 
-5. Get a contract address and paste it on ```export const contractAddress```
+5. Get a contract address and paste it on ```export const contractAddress``` in ```constants.js```
 
    To get the contract you have to run the command
    ````
